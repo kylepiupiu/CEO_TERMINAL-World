@@ -8,19 +8,27 @@ CEO TERMINAL is not a CRM and it is not a click-to-fill-a-progress-bar sales gam
 
 The player enters a living business world, moves through offices and social spaces, talks to people, gathers incomplete information, judges what is credible, chooses what to do next, advances time, and lives with the consequences.
 
-The core loop is simple:
-
 **Explore → Talk → Learn → Judge → Act → Advance Time → Face the Result**
 
 A friendly contact may not have authority. A junior engineer may become important years later. A competitor may help in one deal and oppose you in another. A verbal promise is not organizational commitment. Revenue is not cash. A project is not real just because someone says they like it.
 
-The game is built around uncertainty, people, organizations, money, and consequences.
-
 ---
 
-## Current Public Build
+## Play the Current Android Build
 
 ### V4-P0.1 — Pixel World Prototype
+
+**[Download from GitHub Releases](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-p0.1-pixel)**
+
+Direct APK:
+
+**[CEO_TERMINAL_V4-P0.1-pixel.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-p0.1-pixel/CEO_TERMINAL_V4-P0.1-pixel.apk)**
+
+SHA-256:
+
+`5bb3ead0a77177b22cb38abe9b774d995ff7dd989344d22e7d4d75c4e86ece52`
+
+Android 7.0+ · arm64-v8a · Offline test build
 
 The current prototype expands the original sales simulation into a small explorable world while preserving the established pixel-art direction.
 
@@ -46,7 +54,19 @@ The prototype includes:
 
 Exploration and casual conversation do **not** automatically create business progress. Meaningful progression still depends on verified facts and actual changes in the business situation.
 
-The current Android build is a test build, not a store-ready release.
+For installation and update options, see **[INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md)**.
+
+---
+
+## Prototype Update Channel
+
+Public Android builds are mirrored here from the private development pipeline after a release build is completed.
+
+For testers who want automatic release detection, **Obtainium** can monitor this repository's GitHub Releases. Android may still require user confirmation before installing an APK update.
+
+Machine-readable prototype update metadata is available in **[update-channel.json](./update-channel.json)**.
+
+A permanent in-place update channel will require a stable Android package ID, a persistent signing key, and monotonically increasing version codes. Until those are frozen, some prototype generations may require a reinstall.
 
 ---
 
@@ -97,7 +117,7 @@ The public roadmap focuses on:
 - long-term career consequences
 - rare characters and hidden events
 
-See [ROADMAP.md](./ROADMAP.md) for the public roadmap.
+See **[ROADMAP.md](./ROADMAP.md)** for the public roadmap and **[CHANGELOG.md](./CHANGELOG.md)** for public milestones.
 
 ---
 
@@ -105,20 +125,18 @@ See [ROADMAP.md](./ROADMAP.md) for the public roadmap.
 
 This repository is the **public-facing home of CEO TERMINAL**.
 
-It is intended for:
+It contains:
 
 - project overview
 - public roadmap
 - release notes
 - playable public builds
-- issue tracking
-- development updates
+- update metadata
+- issue tracking and development updates
 
 The production source code, internal simulation rules, detailed system specifications, balancing data, and private design documents are maintained separately and are **not part of this public repository**.
 
-Public visibility does not mean the project is open source.
-
-See [LICENSE](./LICENSE) for usage restrictions.
+Public visibility does not mean the project is open source. See **[LICENSE](./LICENSE)** for usage restrictions.
 
 ---
 
@@ -136,19 +154,11 @@ The public repository intentionally does not expose the complete production arch
 
 ---
 
-## Releases
-
-Public Android test builds will be published through this repository's **Releases** section.
-
-Builds are experimental and may use test signing. Save compatibility between prototypes is not guaranteed unless explicitly stated in the release notes.
-
----
-
 ## Feedback
 
 Bug reports and gameplay feedback are welcome through GitHub Issues.
 
-At this stage, the project is not accepting unsolicited source-code contributions. See [CONTRIBUTING.md](./CONTRIBUTING.md).
+At this stage, the project is not accepting unsolicited source-code contributions. See **[CONTRIBUTING.md](./CONTRIBUTING.md)**.
 
 ---
 
@@ -157,7 +167,8 @@ At this stage, the project is not accepting unsolicited source-code contribution
 **Current public milestone:** V4-P0.1 Pixel World Prototype  
 **Development status:** Active  
 **Primary platform:** Android  
-**Project language:** Public documentation in English; in-game localization will evolve separately.
+**Public documentation:** English  
+**Production source:** Private
 
 ---
 

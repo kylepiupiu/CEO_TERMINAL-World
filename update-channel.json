@@ -1,0 +1,14 @@
+{
+  "channel": "prototype",
+  "platform": "android",
+  "latest_tag": "v4-p0.1-pixel",
+  "version_name": "4.0-P0.1-pixel",
+  "version_code": 4001,
+  "package_id": "com.kyle.ceoterminal.v4p0.pixel",
+  "prerelease": true,
+  "mandatory": false,
+  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-p0.1-pixel",
+  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-p0.1-pixel/CEO_TERMINAL_V4-P0.1-pixel.apk",
+  "sha256": "5bb3ead0a77177b22cb38abe9b774d995ff7dd989344d22e7d4d75c4e86ece52",
+  "notes": "Prototype/test-signed build. In-place update compatibility is not yet guaranteed."
+}

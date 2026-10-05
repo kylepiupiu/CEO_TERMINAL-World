@@ -20,9 +20,9 @@ A friendly contact may not have authority. A junior employee may become importan
 
 **[Download from GitHub Releases](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha-core)**
 
-Public APK:
+Direct APK:
 
-`CEO_TERMINAL_V4-Alpha-Core.apk`
+**[CEO_TERMINAL_V4-Alpha-Core.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha-core/CEO_TERMINAL_V4-Alpha-Core.apk)**
 
 Android version:
 
@@ -31,6 +31,8 @@ Android version:
 - Package ID: `com.kyle.ceoterminal.v4alpha`
 - Architecture: arm64-v8a
 - Distribution: offline, test-signed Alpha prerelease
+- APK size: `35,314,963 bytes`
+- SHA-256: `04e214e6b3cb184cc753c170efc5de26530562e3cd11f2e7a6210e208063fead`
 
 V4 Alpha Core is the first frozen V4 baseline where the explorable world, people, company operation, finance, project execution, relationships, history, and the preserved fact-based sales engine operate as one connected system.
 

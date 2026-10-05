@@ -1,76 +1,84 @@
-# Install & Update — Android Test Builds
+# Install & Update — Android Alpha Builds
 
-CEO TERMINAL public Android test builds are distributed through the **Releases** section of this repository.
+CEO TERMINAL public Android test builds are distributed through this repository's **Releases** section.
 
-## Current build
+## Current recommended build
 
-**V4-P0.1 — Pixel World Prototype**
+**CEO TERMINAL V4 — Alpha Core**
 
 Release page:
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-p0.1-pixel
+https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha-core
 
 Direct APK:
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-p0.1-pixel/CEO_TERMINAL_V4-P0.1-pixel.apk
+https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha-core/CEO_TERMINAL_V4-Alpha-Core.apk
 
-SHA-256:
+Current Android identity:
 
-`5bb3ead0a77177b22cb38abe9b774d995ff7dd989344d22e7d4d75c4e86ece52`
+- Version name: `4.0-alpha.1`
+- Version code: `4100`
+- Package ID: `com.kyle.ceoterminal.v4alpha`
+- Architecture: arm64-v8a
 
-Current package ID:
-
-`com.kyle.ceoterminal.v4p0.pixel`
-
-Current Android version code:
-
-`4001`
+The Alpha Core build is a **test-signed prerelease**.
 
 ## Installation
 
 1. Download the APK from the release page.
 2. Open the downloaded APK on an Android device.
-3. Android may ask you to allow installation from the browser or file manager you used to download it.
+3. Android may ask you to allow installation from the browser or file manager used to download it.
 4. Confirm the installation.
 
-This is a prototype/test build and is not currently distributed through an app store.
+This is an Alpha test build and is not currently distributed through an app store.
 
-## Updates during the prototype stage
+## Updates during Alpha
 
 ### Recommended: Obtainium
 
-Testers who want update notifications can use **Obtainium** and add this GitHub repository as the app source:
+Testers who want release notifications can use **Obtainium** and add this GitHub repository as the app source:
 
 `https://github.com/kylepiupiu/CEO_TERMINAL-World`
 
-Obtainium can watch GitHub Releases and notify the tester when a newer APK is published.
+Obtainium can monitor GitHub Releases and notify the tester when a newer APK appears.
 
 Android still controls the final installation step. Depending on the device and Android version, the user may need to confirm installation of the downloaded update.
 
 ### Important signing rule
 
-Android can only install a new APK over an existing installation when both builds use the **same package ID and the same signing key**, and the new build has a higher version code.
+Android can install a new APK over an existing installation only when:
 
-The current prototype generation is test-signed. A permanent update channel will be enabled only after CEO TERMINAL freezes:
+- the package ID is compatible;
+- both APKs use the same signing key;
+- the new APK has a higher version code.
 
-- a stable package ID
-- a persistent signing key
-- monotonically increasing Android version codes
+The current Alpha channel is still test-signed. A permanent in-place update channel is **not yet guaranteed**.
 
-Until that point, some prototype upgrades may require uninstalling the previous build first. When that is required, the release notes will state it clearly.
+Until the production signing channel is frozen, a future Alpha build may require uninstalling the previous build first. When that happens, the release notes will state it explicitly.
 
-## Planned in-game update flow
+## Planned permanent update channel
 
-A later test build is planned to check the public release channel on startup:
+The project is moving toward:
 
-1. Check the current public version metadata.
-2. Compare it with the installed version.
-3. Show **New version available** when appropriate.
-4. Open or download the new APK.
-5. Hand installation to Android for user confirmation.
+- a persistent Android signing key;
+- a stable long-term package identity;
+- monotonically increasing version codes;
+- machine-readable release metadata;
+- in-game release checking;
+- optional app-store testing tracks later.
 
-Normal third-party Android applications cannot silently replace themselves in the background. Fully managed automatic updates are better handled later through Google Play testing tracks or another trusted app-distribution service.
+The public machine-readable channel is available at:
+
+`update-channel.json`
+
+A future build can use this metadata to compare its installed version with the latest public release and show **New version available**.
+
+Normal third-party Android applications cannot silently replace themselves in the background. Even with in-game update checking, Android generally requires user confirmation for a sideloaded APK update.
+
+## Historical builds
+
+Earlier prototype releases remain available in GitHub Releases for comparison and testing history, including V4-P0.1 and the V3.9 Android previews.
 
 ## Source policy
 
-This public repository distributes playable builds and public documentation only. Production source code, internal simulation rules, balancing data, and private design specifications are maintained separately.
+This public repository distributes playable builds and public documentation only. Production source code, internal simulation rules, balancing data, tests, and private design specifications are maintained separately.

@@ -1,38 +1,53 @@
 # CEO TERMINAL — World
 
-**A pixel-art business RPG about real-world B2B sales, judgment, relationships, and company survival.**
+**A pixel-art business RPG about real-world B2B sales, judgment, relationships, company survival, and long-term consequences.**
 
 > **No facts, no progress.**
 
 CEO TERMINAL is not a CRM and it is not a click-to-fill-a-progress-bar sales game.
 
-The player enters a living business world, moves through offices and social spaces, talks to people, gathers incomplete information, judges what is credible, chooses what to do next, advances time, and lives with the consequences.
+The player enters a living business world, moves through offices and social spaces, talks to people, gathers incomplete information, allocates time / people / cash, makes decisions, advances time, and lives with the consequences.
 
-**Explore → Talk → Learn → Judge → Act → Advance Time → Face the Result**
+**Explore → Talk → Learn → Judge → Allocate → Act → Advance Time → Face the Result**
 
-A friendly contact may not have authority. A junior engineer may become important years later. A competitor may help in one deal and oppose you in another. A verbal promise is not organizational commitment. Revenue is not cash. A project is not real just because someone says they like it.
+A friendly contact may not have authority. A junior employee may become important years later. A large contract may create a cash or delivery crisis. A competitor may cooperate in one situation and oppose you in another. Revenue is not cash, and a verbal promise is not organizational commitment.
 
 ---
 
 ## Play the Current Android Build
 
-### V4-P0.1 — Pixel World Prototype
+### V4 — Alpha Core
 
-**[Download from GitHub Releases](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-p0.1-pixel)**
+**[Download from GitHub Releases](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha-core)**
 
-Direct APK:
+Public APK:
 
-**[CEO_TERMINAL_V4-P0.1-pixel.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-p0.1-pixel/CEO_TERMINAL_V4-P0.1-pixel.apk)**
+`CEO_TERMINAL_V4-Alpha-Core.apk`
 
-SHA-256:
+Android version:
 
-`5bb3ead0a77177b22cb38abe9b774d995ff7dd989344d22e7d4d75c4e86ece52`
+- Version name: `4.0-alpha.1`
+- Version code: `4100`
+- Package ID: `com.kyle.ceoterminal.v4alpha`
+- Architecture: arm64-v8a
+- Distribution: offline, test-signed Alpha prerelease
 
-Android 7.0+ · arm64-v8a · Offline test build
+V4 Alpha Core is the first frozen V4 baseline where the explorable world, people, company operation, finance, project execution, relationships, history, and the preserved fact-based sales engine operate as one connected system.
 
-The current prototype expands the original sales simulation into a small explorable world while preserving the established pixel-art direction.
+Player-facing highlights:
 
-Five spaces are currently represented:
+- five connected pixel-art spaces
+- four-direction mobile movement and scene interaction
+- persistent people, roles and relationships
+- NPC role, style and personality differences
+- company workload, authority and operating issues
+- project ownership, delivery, acceptance and receivables flow
+- finance, evidence, risk, competitor and people views
+- company history, review and long-run consequences
+- production-map navigation and mobile UI polish
+- preserved fact-based sales progression
+
+The five current spaces are:
 
 - City Overview
 - Company Headquarters
@@ -40,33 +55,27 @@ Five spaces are currently represented:
 - Client Management / Functional Area
 - Street-Corner Café
 
-The prototype includes:
-
-- Four-direction character movement
-- Mobile touch controls
-- Scene entrances and exits
-- Position persistence between spaces
-- Proximity-based interaction
-- Dialogue and notebook overlays
-- Local save / load
-- Company project and approval workstations
-- A preserved fact-based sales progression model
-
-Exploration and casual conversation do **not** automatically create business progress. Meaningful progression still depends on verified facts and actual changes in the business situation.
+Exploration and casual conversation do **not** automatically create business progress. Meaningful progression still depends on verified facts and real changes in the business situation.
 
 For installation and update options, see **[INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md)**.
 
 ---
 
-## Prototype Update Channel
+## What Alpha Core Means
 
-Public Android builds are mirrored here from the private development pipeline after a release build is completed.
+Alpha Core means the first V4 core-system loop is complete and frozen as a development baseline.
 
-For testers who want automatic release detection, **Obtainium** can monitor this repository's GitHub Releases. Android may still require user confirmation before installing an APK update.
+It does **not** mean V4 is finished.
 
-Machine-readable prototype update metadata is available in **[update-channel.json](./update-channel.json)**.
+The next stage focuses on:
 
-A permanent in-place update channel will require a stable Android package ID, a persistent signing key, and monotonically increasing version codes. Until those are frozen, some prototype generations may require a reinstall.
+- real-player Alpha feedback
+- mobile feel and usability
+- event-density tuning
+- 1–3 year balance tuning
+- deeper NPC schedules and social windows
+- more world and business content
+- persistent Android signing and a cleaner update channel
 
 ---
 
@@ -74,7 +83,7 @@ A permanent in-place update channel will require a stable Android package ID, a 
 
 ### No facts, no progress
 
-Subjective optimism does not move a deal forward. Progress must come from evidence, action, organizational change, commitment, or financial reality.
+Subjective optimism does not move a deal forward. Progress must come from evidence, action, organizational change, commitment, delivery, or financial reality.
 
 ### Actions are not outcomes
 
@@ -84,40 +93,50 @@ Sending a proposal, making a call, arranging a meeting, or asking for support is
 
 The player-facing loop stays intentionally simple:
 
-**Move / Talk / Observe / Decide / Advance Time**
+**Move / Talk / Observe / Decide / Allocate / Advance Time**
 
-Complexity lives behind the world, not in a wall of dashboards.
+Complexity belongs in people, organizations, information, money, time, and consequences — not in a wall of buttons.
 
 ### NPCs are people, not quest dispensers
 
-People have roles, interests, limits, relationships, and changing circumstances. Formal title does not perfectly predict informational value, influence, or future importance.
+People have roles, interests, personalities, limits, relationships, memories, and changing circumstances. Formal title does not perfectly predict informational value, influence, or future importance.
 
 ### The world does not revolve around the player
 
-Organizations change. People move. Budgets tighten. Competitors act. Opportunities disappear. Old relationships can become relevant again.
+Organizations change. People move. Budgets tighten. Employees develop. Competitors act. Opportunities disappear. Old relationships can become relevant again.
 
 ---
 
-## Development Direction
+## Public Development Direction
 
-V3 established the core business-sales simulation and the fact-based progression philosophy.
+V3 established the fact-based B2B sales simulation.
 
-V4 is about making the surrounding world feel alive.
+V4 expands that foundation into a living company and business world.
 
-The public roadmap focuses on:
+The public roadmap now moves beyond the Alpha Core baseline toward:
 
-- richer pixel environments
-- living NPC behavior
-- organizational relationships
-- multiple companies and locations
-- cities and travel
+- richer NPC schedules and social behavior
+- deeper organizations and internal politics
+- more companies and locations
 - player and company growth
-- market and policy changes
+- dynamic markets and policy changes
 - competition and cooperation
 - long-term career consequences
 - rare characters and hidden events
 
-See **[ROADMAP.md](./ROADMAP.md)** for the public roadmap and **[CHANGELOG.md](./CHANGELOG.md)** for public milestones.
+See **[ROADMAP.md](./ROADMAP.md)** for the public roadmap and **[CHANGELOG.md](./CHANGELOG.md)** for milestones.
+
+---
+
+## Update Channel
+
+Public Android builds are published here from the private development pipeline after a validated build is completed.
+
+Testers can use **Obtainium** to monitor this repository's Releases for new APKs. Android may still require user confirmation before installing an update.
+
+Machine-readable update metadata is available in **[update-channel.json](./update-channel.json)**.
+
+Alpha builds are currently test-signed. In-place upgrade compatibility is not guaranteed until the permanent signing channel is frozen.
 
 ---
 
@@ -128,13 +147,13 @@ This repository is the **public-facing home of CEO TERMINAL**.
 It contains:
 
 - project overview
-- public roadmap
+- public roadmap and changelog
+- playable Android builds
 - release notes
-- playable public builds
-- update metadata
-- issue tracking and development updates
+- install / update guidance
+- public feedback entry points
 
-The production source code, internal simulation rules, detailed system specifications, balancing data, and private design documents are maintained separately and are **not part of this public repository**.
+The production source code, internal simulation rules, detailed system specifications, balancing data, private NPC logic, tests, and hidden mechanics are maintained separately and are **not part of this public repository**.
 
 Public visibility does not mean the project is open source. See **[LICENSE](./LICENSE)** for usage restrictions.
 
@@ -142,15 +161,15 @@ Public visibility does not mean the project is open source. See **[LICENSE](./LI
 
 ## Technology
 
-Current prototypes are built with:
+Current builds use:
 
 - Godot 4.x
 - GDScript
 - 2D pixel-art presentation
 - Android-first mobile testing
-- Offline local saves
+- offline local saves
 
-The public repository intentionally does not expose the complete production architecture.
+The public repository intentionally does not expose the production architecture.
 
 ---
 
@@ -164,8 +183,8 @@ At this stage, the project is not accepting unsolicited source-code contribution
 
 ## Project Status
 
-**Current public milestone:** V4-P0.1 Pixel World Prototype  
-**Development status:** Active  
+**Current public milestone:** V4 Alpha Core  
+**Development status:** Active / External Alpha next  
 **Primary platform:** Android  
 **Public documentation:** English  
 **Production source:** Private

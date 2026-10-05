@@ -1,114 +1,125 @@
 # CEO TERMINAL — Public Roadmap
 
-This roadmap describes the public direction of the project without exposing private simulation rules, balancing data, or internal implementation details.
+This roadmap describes the public direction of the project without exposing private simulation rules, balancing data, internal implementation details, or hidden mechanics.
 
-## Current Milestone — V4-P0.1
+## Current Milestone — V4 Alpha Core
 
-The current prototype focuses on proving that the business simulation can live inside an explorable pixel world.
+**Status: complete and frozen as the current V4 core baseline.**
 
-Current priorities:
+The Alpha Core milestone moves CEO TERMINAL beyond the earlier V4-P0 world prototype. The explorable pixel world is now connected to persistent people, company operation, project execution, finance, relationships, history, and the preserved fact-based sales engine.
 
-- preserve the established pixel-art identity
-- improve mobile movement and interaction
-- make spaces feel connected rather than menu-driven
-- keep sales progression fact-based
-- keep the core business logic independent from exploration
+Current public Alpha capabilities include:
 
-Current prototype spaces:
+- five connected explorable spaces
+- four-direction mobile movement and touch interaction
+- persistent people, roles and relationships
+- role / style / personality differences between NPCs
+- workload, authority and operating issues
+- project ownership and execution consequences
+- delivery, acceptance, receivables and collection flow
+- finance, evidence, risk, competitor and people views
+- long-term company history and review foundations
+- production-map navigation and mobile UI improvements
 
-- City Overview
-- Company Headquarters
-- Client Technical Department
-- Client Management / Functional Area
-- Street-Corner Café
+The core rule remains unchanged:
 
-## Next — Living World Foundation
+> **No facts, no progress.**
 
-The next phase focuses on making the world continue to exist even when the player is not actively talking to a key client.
+## Next — External Alpha
 
-Planned directions include:
+The next phase is not another redesign of the Alpha Core.
 
-- better foreground / background depth
-- improved collision and indoor navigation
-- NPC schedules
-- location persistence
-- world-state continuity
-- more natural scene transitions
-- better mobile interaction feedback
+It focuses on validating and deepening the completed core with real players:
 
-## Living NPCs
+- installation and device compatibility
+- movement and mobile-control feel
+- UI clarity and information density
+- event-density tuning
+- 1–3 year operating balance
+- project / cash / staffing pressure balance
+- save continuity and long-session stability
+- clearer feedback when decisions create delayed consequences
 
-NPCs will gradually become persistent people rather than static dialogue points.
+## Living NPC Depth
 
-Public design goals:
+The Alpha Core already contains the first persistent people / role / personality / relationship foundation.
 
-- different personalities and communication styles
-- incomplete and sometimes unreliable information
-- changing attitudes and circumstances
+The next public direction is to make that foundation feel less systemic and more human through:
+
+- richer schedules
+- social windows
+- more varied communication behavior
+- stronger long-term memory expression
 - professional movement over time
-- relationships that can matter again later
-- competitors who can also become partners
+- relationship reactivation after long gaps
+- more natural cooperation and conflict
+
+NPCs should remain people rather than quest dispensers.
 
 ## Organizations
 
-Client companies will evolve from collections of characters into organizations with internal structure.
+Client companies will continue to become real organizations rather than collections of dialogue points.
 
-The player will need to understand:
+The player should gradually learn:
 
 - who knows something
 - who can influence something
 - who can approve something
 - who can block something
+- where responsibility actually sits
+- when formal authority and informal influence differ
 
-The game will avoid presenting a perfect organizational map as a free answer. Players should learn organizations through experience.
+The game will avoid giving players a perfect organizational map for free.
 
-## Cities and Travel
+## World Expansion
 
-Future world expansion may include:
+After Alpha tuning, the world can expand carefully through:
 
-- multiple companies
-- multiple cities
-- transport and travel time
+- additional companies
+- additional districts / cities
+- travel time and cost
 - hotels and temporary work locations
 - informal social spaces
 - regional business networks
+- more competitor and partner presence
 
 New locations must create new decisions, not just longer walking distances.
 
 ## Player and Company Growth
 
-Long-term progression will include both the player and the company.
+Long-term progression will continue to cover both the player and the company.
 
-Possible growth areas include:
+Public growth directions include:
 
 - professional understanding
-- communication ability
-- judgment
+- communication and judgment
 - reputation
 - relationship networks
-- company cash flow
-- staff and operating capacity
-- market coverage
+- company cash resilience
+- staff and organizational capacity
+- delegation and management depth
 - delivery capability
+- market coverage
 
-Progression should change what the player can understand, attempt, and survive. It should not be reduced to simple stat grinding.
+Progression should change what the player can understand, attempt, delegate, and survive. It should not become simple stat grinding.
 
 ## Dynamic Business Environment
 
-The world should change even when the player does nothing.
+The world should keep changing even when the player does nothing.
 
-Future systems may include:
+Future depth may include:
 
 - budget cycles
-- client planning changes
+- customer planning changes
 - procurement-policy changes
 - market shifts
-- new competitors
+- competitor movement
 - technology changes
 - organizational restructuring
 - cash pressure
+- new opportunity sources
 
-The purpose of these systems is to force re-evaluation, not to create arbitrary punishment.
+The purpose is to force re-evaluation, not to create arbitrary punishment.
 
 ## Competition and Cooperation
 
@@ -122,7 +133,7 @@ A peer may be:
 - a competitor
 - cooperative in one project and opposed in another
 
-The long-term goal is a business world based on overlapping interests rather than fixed friend/enemy labels.
+The long-term goal is a business world based on overlapping interests rather than fixed friend / enemy labels.
 
 ## Long-Term Career
 
@@ -130,14 +141,32 @@ The eventual game should support a career measured in years rather than individu
 
 Long-term possibilities include:
 
+- remaining a small but stable specialist company
+- building a larger organization
 - taking responsibility for larger territories
-- building a team
-- changing industries
-- starting a company
 - surviving cash crises
+- changing business focus
 - abandoning weak markets
 - benefiting from relationships built years earlier
+- recovering after contraction
 - encountering rare characters and hidden opportunities
+
+There is no single correct company shape or forced victory ending.
+
+## Distribution & Update Channel
+
+The public Android release process will also mature during Alpha.
+
+Planned improvements:
+
+- persistent signing key
+- stable package identity for the long-term channel
+- monotonic Android version codes
+- cleaner in-place upgrades
+- in-game release checking
+- potential Google Play testing tracks later
+
+Until permanent signing is frozen, Alpha builds may occasionally require reinstalling.
 
 ## What the Public Roadmap Does Not Contain
 
@@ -150,6 +179,7 @@ The following remain private development material:
 - complete data models
 - private NPC logic
 - internal event tables
+- tests
 - unreleased story and hidden-character mechanics
 - production source code
 
@@ -157,4 +187,4 @@ The following remain private development material:
 
 > Build a world that is difficult to understand, but easy to operate.
 
-The complexity belongs in the people, organizations, information, money, and consequences — not in the number of buttons on the screen.
+The complexity belongs in people, organizations, information, money, time, and consequences — not in the number of buttons on the screen.

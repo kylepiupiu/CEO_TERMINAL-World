@@ -20,6 +20,8 @@ Current Android identity:
 - Version code: `4100`
 - Package ID: `com.kyle.ceoterminal.v4alpha`
 - Architecture: arm64-v8a
+- APK size: `35,314,963 bytes`
+- SHA-256: `04e214e6b3cb184cc753c170efc5de26530562e3cd11f2e7a6210e208063fead`
 
 The Alpha Core build is a **test-signed prerelease**.
 

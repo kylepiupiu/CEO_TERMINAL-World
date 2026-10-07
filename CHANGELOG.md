@@ -4,7 +4,24 @@ All notable public milestones of CEO TERMINAL are summarized here.
 
 This changelog intentionally describes player-facing changes only. Internal simulation rules, balancing data, tests, source code, and hidden mechanics remain private.
 
-## V4 Alpha 2.1 — Current Public Milestone
+## V4 Alpha 2.1 R1 — Current Public Milestone
+
+Released on 2026-10-07 in response to playtest feedback.
+
+- Refined alternating walking poses, motion cadence, acceleration and stable head presentation.
+- Opened the visitor sofa area by shortening the side planter and removing the entrance planter.
+- Replaced the central cafe/restaurant alley tree with a small downward sign beside the route.
+- Improved collision near the home bed, sofa and bookcase.
+- Added floating movement anywhere in the left half of the gameplay screen and enlarged the action buttons.
+- Retained phone/tablet/square-screen layouts, safe-area mapping and existing building access rules.
+
+Version: 4.0-alpha.2.1-r1 / 4202. Same package and verified signing certificate as Alpha 2.1 / 4201, allowing an in-place update that retains local saves. Do not uninstall first.
+
+All 17 scenes, six viewport sizes, movement sequences and revised passages were checked in the running engine. Android touch feel and performance remain playtest items.
+
+[Release and screenshots](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1)
+
+## V4 Alpha 2.1 — Complete World Update
 
 Released on 2026-10-07. Completes the world and character visual update.
 

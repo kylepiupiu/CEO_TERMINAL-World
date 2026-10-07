@@ -16,18 +16,20 @@ A friendly contact may not have authority. A junior employee may become importan
 
 ## Play the Current Android Build
 
-### V4 — Alpha 2.1
+### V4 — Alpha 2.1 R1
 
-**[Download CEO_TERMINAL_V4-Alpha2.1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/CEO_TERMINAL_V4-Alpha2.1.apk)** · [Release notes and checksums](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1)
+**[Download CEO_TERMINAL_V4-Alpha2.1-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk)** · [Release notes and checksums](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1)
 
-- Version: 4.0-alpha.2.1 / 4201
+- Version: 4.0-alpha.2.1-r1 / 4202
 - Package: com.kyle.ceoterminal.v4alpha
 - Android 7.0+ with OpenGL ES 3.0; 64-bit and 32-bit ARM in one APK
 - Offline, test-signed Alpha; current in-game text is Chinese
-- APK: 78,864,320 bytes
-- SHA-256: 9793376ea6585cacb400c87353adc0c2f686a349045802a09599eb1a1e5e768d
+- APK: 78,729,694 bytes
+- SHA-256: 0ecd0c68e69acee2fe8216b72df44191a49490cdce451503f5a6565208578560
 
-Alpha 2.1 completes the visual update across all 17 environments and the characters. It builds on the frozen Alpha Core business systems.
+Alpha 2.1 completes the visual update across all 17 environments and the characters. R1 refines walking and head stability, opens the sofa entrance, adds the alley direction sign, improves furniture collision and introduces left-half floating movement with larger action buttons. It builds on the frozen Alpha Core business systems.
+
+To move, hold anywhere in the left half of the gameplay screen, then drag in a direction. The control appears at your finger. Release to stop.
 
 Player-facing changes:
 
@@ -45,17 +47,17 @@ Exploration and casual conversation do **not** automatically create business pro
 
 ### Actual running-game screenshots
 
-![City](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/city.png)
+![City](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/city.png)
 
-![Company](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/company.png)
+![Company](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/company.png)
 
-![Cafe](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/cafe.png)
+![Cafe](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/cafe.png)
 
-![Restaurant](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/restaurant.png)
+![Restaurant](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/restaurant.png)
 
 Automated engine checks cover all 17 scenes, six viewport sizes and simulated left/right cutouts. Real-device installation, GPU compatibility, touch feel and sustained performance still need playtesting.
 
-This build is test-signed and may not install over earlier Alpha builds. Uninstalling deletes local saves. See **[INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md)** before replacing an existing installation.
+R1 uses the same signing certificate as Alpha 2.1 / 4201 and can be installed directly over it while keeping local saves. Do not uninstall first. Older builds signed with another certificate may still be incompatible. See **[INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md)** before replacing an existing installation.
 
 ---
 
@@ -134,7 +136,7 @@ Testers can use **Obtainium** to monitor this repository's Releases for new APKs
 
 Machine-readable update metadata is available in **[update-channel.json](./update-channel.json)**.
 
-Alpha builds are currently test-signed. In-place upgrade compatibility is not guaranteed until the permanent signing channel is frozen.
+Alpha builds are currently test-signed. Alpha 2.1 / 4201 to R1 / 4202 uses the same verified certificate. Compatibility with other historical certificates is not guaranteed until the permanent signing channel is frozen.
 
 ---
 
@@ -181,7 +183,7 @@ At this stage, the project is not accepting unsolicited source-code contribution
 
 ## Project Status
 
-**Current public milestone:** V4 Alpha 2.1  
+**Current public milestone:** V4 Alpha 2.1 R1  
 **Development status:** Active / External Alpha testing  
 **Primary platform:** Android  
 **Public documentation:** English  

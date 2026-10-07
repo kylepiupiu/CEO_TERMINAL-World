@@ -1,20 +1,21 @@
 {
   "channel": "alpha",
   "platform": "android",
-  "latest_tag": "v4-alpha2.1",
-  "version_name": "4.0-alpha.2.1",
-  "version_code": 4201,
+  "latest_tag": "v4-alpha2.1-r1",
+  "version_name": "4.0-alpha.2.1-r1",
+  "version_code": 4202,
   "package_id": "com.kyle.ceoterminal.v4alpha",
   "prerelease": true,
   "mandatory": false,
-  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1",
-  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/CEO_TERMINAL_V4-Alpha2.1.apk",
-  "sha256": "9793376ea6585cacb400c87353adc0c2f686a349045802a09599eb1a1e5e768d",
-  "notes": "Alpha 2.1: 17 scene backgrounds, new characters, phone/tablet framing, safe-area controls and dual ARM support. Test-signed; older certificates may prevent in-place installation. Uninstalling deletes local saves.",
-  "apk_size_bytes": 78864320,
+  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1",
+  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk",
+  "sha256": "0ecd0c68e69acee2fe8216b72df44191a49490cdce451503f5a6565208578560",
+  "notes": "Alpha 2.1 R1: refined walking, open sofa access, alley sign, improved furniture collision, floating left-half movement and larger buttons. Same verified signing certificate as Alpha 2.1 / 4201: install over it to retain local saves.",
+  "apk_size_bytes": 78729694,
   "architectures": [
     "arm64-v8a",
     "armeabi-v7a"
   ],
-  "min_sdk": 24
+  "min_sdk": 24,
+  "signing_certificate_sha256": "84e111d18f33fb1a0b52a20a4ce6088660c8b04dcbc0780327e113a1e1b3d697"
 }

@@ -4,29 +4,29 @@ CEO TERMINAL public Android test builds are distributed through this repository'
 
 ## Current recommended build
 
-**CEO TERMINAL V4 — Alpha 2.1**
+**CEO TERMINAL V4 — Alpha 2.1 R1**
 
 Release page:
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1
+https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1
 
 Direct APK:
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/CEO_TERMINAL_V4-Alpha2.1.apk
+https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk
 
 Current Android identity:
 
-- Version name: `4.0-alpha.2.1`
-- Version code: `4201`
+- Version name: `4.0-alpha.2.1-r1`
+- Version code: `4202`
 - Package ID: `com.kyle.ceoterminal.v4alpha`
 - Architecture: arm64-v8a and armeabi-v7a (one APK)
 - Minimum: Android 7.0 / OpenGL ES 3.0
 - Orientation: landscape, including reverse landscape
 - In-game language: Chinese
-- APK size: `78,864,320 bytes`
-- SHA-256: `9793376ea6585cacb400c87353adc0c2f686a349045802a09599eb1a1e5e768d`
+- APK size: `78,729,694 bytes`
+- SHA-256: `0ecd0c68e69acee2fe8216b72df44191a49490cdce451503f5a6565208578560`
 
-The Alpha 2.1 build is a **test-signed prerelease**.
+The Alpha 2.1 R1 build is a **test-signed prerelease**.
 
 ## Installation
 
@@ -59,7 +59,11 @@ Android can install a new APK over an existing installation only when:
 
 The current Alpha channel is still test-signed. A permanent in-place update channel is **not yet guaranteed**.
 
-Alpha 2.1 may use a different test certificate from earlier builds, so Android may reject an in-place update. Uninstalling deletes the previous app's local save. Do not remove an existing save-bearing installation just to bypass a signing conflict. There is no supported cross-signature save migration in this build.
+Alpha 2.1 R1 / 4202 has the same package and verified signing certificate as Alpha 2.1 / 4201, with a higher version code. Install it over 4201 to preserve local saves; do not uninstall first. The save format and business data are unchanged.
+
+Signing certificate SHA-256: `84e111d18f33fb1a0b52a20a4ce6088660c8b04dcbc0780327e113a1e1b3d697`.
+
+Older test builds may have a different certificate, so Android may reject those in-place upgrades. Uninstalling deletes local saves. Do not remove a save-bearing installation to bypass a signing conflict. There is no supported cross-signature save migration.
 
 ## Planned permanent update channel
 

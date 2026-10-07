@@ -16,50 +16,46 @@ A friendly contact may not have authority. A junior employee may become importan
 
 ## Play the Current Android Build
 
-### V4 — Alpha Core
+### V4 — Alpha 2.1
 
-**[Download from GitHub Releases](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha-core)**
+**[Download CEO_TERMINAL_V4-Alpha2.1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/CEO_TERMINAL_V4-Alpha2.1.apk)** · [Release notes and checksums](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1)
 
-Direct APK:
+- Version: 4.0-alpha.2.1 / 4201
+- Package: com.kyle.ceoterminal.v4alpha
+- Android 7.0+ with OpenGL ES 3.0; 64-bit and 32-bit ARM in one APK
+- Offline, test-signed Alpha; current in-game text is Chinese
+- APK: 78,864,320 bytes
+- SHA-256: 9793376ea6585cacb400c87353adc0c2f686a349045802a09599eb1a1e5e768d
 
-**[CEO_TERMINAL_V4-Alpha-Core.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha-core/CEO_TERMINAL_V4-Alpha-Core.apk)**
+Alpha 2.1 completes the visual update across all 17 environments and the characters. It builds on the frozen Alpha Core business systems.
 
-Android version:
+Player-facing changes:
 
-- Version name: `4.0-alpha.1`
-- Version code: `4100`
-- Package ID: `com.kyle.ceoterminal.v4alpha`
-- Architecture: arm64-v8a
-- Distribution: offline, test-signed Alpha prerelease
-- APK size: `35,314,963 bytes`
-- SHA-256: `04e214e6b3cb184cc753c170efc5de26530562e3cd11f2e7a6210e208063fead`
+- Warm, detailed pixel-art rooms with practical furniture, carpet, documents and greenery.
+- A new four-direction player with walking animation and eight staff/service appearances.
+- Scene-specific collision, foreground occlusion, entrances and interaction points.
+- Elevator floor selection and existing visitor, appointment and procurement access rules.
+- Equal-proportion camera framing on standard and long-screen phones, tablets and square screens.
+- Both landscape orientations, safe-area-aware controls and corrected touch-coordinate mapping.
+- Preserved people, company operation, projects, finance, relationships and local saves.
 
-V4 Alpha Core is the first frozen V4 baseline where the explorable world, people, company operation, finance, project execution, relationships, history, and the preserved fact-based sales engine operate as one connected system.
+The 17 spaces are the city, home, company, client lobby, elevator hall, canteen, technical office, meeting room, section office, planning office, division/expert office, tender office, bid room, secretary office, executive suite, cafe and restaurant.
 
-Player-facing highlights:
+Exploration and casual conversation do **not** automatically create business progress. Progress still depends on verified facts and real changes in the business situation.
 
-- five connected pixel-art spaces
-- four-direction mobile movement and scene interaction
-- persistent people, roles and relationships
-- NPC role, style and personality differences
-- company workload, authority and operating issues
-- project ownership, delivery, acceptance and receivables flow
-- finance, evidence, risk, competitor and people views
-- company history, review and long-run consequences
-- production-map navigation and mobile UI polish
-- preserved fact-based sales progression
+### Actual running-game screenshots
 
-The five current spaces are:
+![City](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/city.png)
 
-- City Overview
-- Company Headquarters
-- Client Technical Department
-- Client Management / Functional Area
-- Street-Corner Café
+![Company](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/company.png)
 
-Exploration and casual conversation do **not** automatically create business progress. Meaningful progression still depends on verified facts and real changes in the business situation.
+![Cafe](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/cafe.png)
 
-For installation and update options, see **[INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md)**.
+![Restaurant](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/restaurant.png)
+
+Automated engine checks cover all 17 scenes, six viewport sizes and simulated left/right cutouts. Real-device installation, GPU compatibility, touch feel and sustained performance still need playtesting.
+
+This build is test-signed and may not install over earlier Alpha builds. Uninstalling deletes local saves. See **[INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md)** before replacing an existing installation.
 
 ---
 
@@ -185,8 +181,8 @@ At this stage, the project is not accepting unsolicited source-code contribution
 
 ## Project Status
 
-**Current public milestone:** V4 Alpha Core  
-**Development status:** Active / External Alpha next  
+**Current public milestone:** V4 Alpha 2.1  
+**Development status:** Active / External Alpha testing  
 **Primary platform:** Android  
 **Public documentation:** English  
 **Production source:** Private

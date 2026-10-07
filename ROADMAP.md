@@ -2,15 +2,19 @@
 
 This roadmap describes the public direction of the project without exposing private simulation rules, balancing data, internal implementation details, or hidden mechanics.
 
-## Current Milestone — V4 Alpha Core
+## Current Milestone — V4 Alpha 2.1
 
-**Status: complete and frozen as the current V4 core baseline.**
+**Status: full visual update published for external Alpha testing.**
+
+Alpha 2.1 completes all 17 scene backgrounds, new characters, room-aligned interactions and general phone/tablet screen support. The Alpha Core business baseline remains frozen.
 
 The Alpha Core milestone moves CEO TERMINAL beyond the earlier V4-P0 world prototype. The explorable pixel world is now connected to persistent people, company operation, project execution, finance, relationships, history, and the preserved fact-based sales engine.
 
 Current public Alpha capabilities include:
 
-- five connected explorable spaces
+- 17 connected spaces with distinct city, company, client and social environments
+- new four-direction characters and walking animation
+- landscape phone/tablet framing, safe areas and touch-coordinate support
 - four-direction mobile movement and touch interaction
 - persistent people, roles and relationships
 - role / style / personality differences between NPCs

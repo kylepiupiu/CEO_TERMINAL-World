@@ -4,7 +4,26 @@ All notable public milestones of CEO TERMINAL are summarized here.
 
 This changelog intentionally describes player-facing changes only. Internal simulation rules, balancing data, tests, source code, and hidden mechanics remain private.
 
-## V4 Alpha Core — Current Public Milestone
+## V4 Alpha 2.1 — Current Public Milestone
+
+Released on 2026-10-07. Completes the world and character visual update.
+
+- Replaced artwork across all 17 scenes, including the city, cafe, restaurant and the full client-office hierarchy.
+- Added a new four-direction walking player and eight staff/service appearances.
+- Aligned furniture collision, foreground occlusion, spawns, exits and interaction positions with each room.
+- Added the elevator floor menu while preserving visitor and appointment access conditions.
+- Updated warm carpeted offices, sofa greenery, the extended meeting table and six-seat restaurant round table.
+- Adapted the camera and HUD to standard/long-screen phones, tablets and square screens, including both landscape directions and safe-area touch mapping.
+- Packaged 32-bit and 64-bit ARM support together.
+- Preserved business systems, fact-based progression and local-save data; migrated obsolete room coordinates.
+
+Version: 4.0-alpha.2.1 / 4201. Package: com.kyle.ceoterminal.v4alpha. Test-signed Alpha.
+
+All scenes and six viewport sizes were checked in the running engine. Android device/GPU performance and touch feel remain playtest items. Older test certificates may prevent an in-place update; uninstalling deletes local saves.
+
+[Release and screenshots](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1)
+
+## V4 Alpha Core — Frozen Core Baseline
 
 V4 Alpha Core completes the first integrated V4 company-operation baseline on top of the preserved fact-based B2B sales engine.
 

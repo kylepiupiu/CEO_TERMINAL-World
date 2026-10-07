@@ -4,26 +4,29 @@ CEO TERMINAL public Android test builds are distributed through this repository'
 
 ## Current recommended build
 
-**CEO TERMINAL V4 — Alpha Core**
+**CEO TERMINAL V4 — Alpha 2.1**
 
 Release page:
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha-core
+https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1
 
 Direct APK:
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha-core/CEO_TERMINAL_V4-Alpha-Core.apk
+https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/CEO_TERMINAL_V4-Alpha2.1.apk
 
 Current Android identity:
 
-- Version name: `4.0-alpha.1`
-- Version code: `4100`
+- Version name: `4.0-alpha.2.1`
+- Version code: `4201`
 - Package ID: `com.kyle.ceoterminal.v4alpha`
-- Architecture: arm64-v8a
-- APK size: `35,314,963 bytes`
-- SHA-256: `04e214e6b3cb184cc753c170efc5de26530562e3cd11f2e7a6210e208063fead`
+- Architecture: arm64-v8a and armeabi-v7a (one APK)
+- Minimum: Android 7.0 / OpenGL ES 3.0
+- Orientation: landscape, including reverse landscape
+- In-game language: Chinese
+- APK size: `78,864,320 bytes`
+- SHA-256: `9793376ea6585cacb400c87353adc0c2f686a349045802a09599eb1a1e5e768d`
 
-The Alpha Core build is a **test-signed prerelease**.
+The Alpha 2.1 build is a **test-signed prerelease**.
 
 ## Installation
 
@@ -56,7 +59,7 @@ Android can install a new APK over an existing installation only when:
 
 The current Alpha channel is still test-signed. A permanent in-place update channel is **not yet guaranteed**.
 
-Until the production signing channel is frozen, a future Alpha build may require uninstalling the previous build first. When that happens, the release notes will state it explicitly.
+Alpha 2.1 may use a different test certificate from earlier builds, so Android may reject an in-place update. Uninstalling deletes the previous app's local save. Do not remove an existing save-bearing installation just to bypass a signing conflict. There is no supported cross-signature save migration in this build.
 
 ## Planned permanent update channel
 

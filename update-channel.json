@@ -1,14 +1,20 @@
 {
   "channel": "alpha",
   "platform": "android",
-  "latest_tag": "v4-alpha-core",
-  "version_name": "4.0-alpha.1",
-  "version_code": 4100,
+  "latest_tag": "v4-alpha2.1",
+  "version_name": "4.0-alpha.2.1",
+  "version_code": 4201,
   "package_id": "com.kyle.ceoterminal.v4alpha",
   "prerelease": true,
   "mandatory": false,
-  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha-core",
-  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha-core/CEO_TERMINAL_V4-Alpha-Core.apk",
-  "sha256": "04e214e6b3cb184cc753c170efc5de26530562e3cd11f2e7a6210e208063fead",
-  "notes": "V4 Alpha Core. Test-signed prerelease; in-place update compatibility is not guaranteed until permanent signing is frozen."
+  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1",
+  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1/CEO_TERMINAL_V4-Alpha2.1.apk",
+  "sha256": "9793376ea6585cacb400c87353adc0c2f686a349045802a09599eb1a1e5e768d",
+  "notes": "Alpha 2.1: 17 scene backgrounds, new characters, phone/tablet framing, safe-area controls and dual ARM support. Test-signed; older certificates may prevent in-place installation. Uninstalling deletes local saves.",
+  "apk_size_bytes": 78864320,
+  "architectures": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "min_sdk": 24
 }

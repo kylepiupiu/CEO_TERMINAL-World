@@ -1,4 +1,4 @@
-# CEO TERMINAL — Public Roadmap
+# CEO TERMINAL — Public Roadmap\n\n**English** | [简体中文](./ROADMAP.zh-CN.md)
 
 This roadmap describes the public direction of the project without exposing private simulation rules, balancing data, internal implementation details, or hidden mechanics.
 

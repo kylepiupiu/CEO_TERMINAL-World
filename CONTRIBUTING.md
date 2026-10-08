@@ -1,4 +1,4 @@
-# Contributing to CEO TERMINAL
+# Contributing to CEO TERMINAL\n\n**English** | [简体中文](./CONTRIBUTING.zh-CN.md)
 
 Thanks for your interest in the project.
 

@@ -1,4 +1,4 @@
-# Changelog
+# Changelog\n\n**English** | [简体中文](./CHANGELOG.zh-CN.md)
 
 All notable public milestones of CEO TERMINAL are summarized here.
 

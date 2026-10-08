@@ -1,4 +1,4 @@
-# Install & Update — Android Alpha Builds
+# Install & Update — Android Alpha Builds\n\n**English** | [简体中文](./INSTALL_AND_UPDATE.zh-CN.md)
 
 CEO TERMINAL public Android test builds are distributed through this repository's **Releases** section.
 

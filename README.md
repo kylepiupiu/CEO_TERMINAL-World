@@ -1,4 +1,4 @@
-# CEO TERMINAL — World
+# CEO TERMINAL — World\n\n**English** | [简体中文](./README.zh-CN.md)
 
 **A pixel-art business RPG about real-world B2B sales, judgment, relationships, company survival, and long-term consequences.**
 

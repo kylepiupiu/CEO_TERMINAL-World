@@ -14,6 +14,18 @@ A friendly contact may not have authority. A junior employee may become importan
 
 ---
 
+## Core Philosophy
+
+**The world runs on objective rules. People act according to their own beliefs, roles, incentives, and interests. The player makes decisions with limited and imperfect information. Outcomes are determined by facts, rules, and causal relationships — not by what the player expects or wants.**
+
+**Outcomes must be reasonable, but they do not have to match the player's expectations.**
+
+This is what **No facts, no progress** means in CEO TERMINAL. Actions are not progress. Intentions are not commitments. Assumptions are not facts. Only verifiable changes in the world can move the underlying state forward.
+
+A good decision can fail in the short term. A bad decision can occasionally appear to work. The simulation does not promise the player a preferred outcome; it promises that meaningful outcomes should remain explainable through facts and causality.
+
+---
+
 ## Play the Current Android Build
 
 ### V4 — Alpha 2.1 R1
@@ -83,7 +95,7 @@ The next stage focuses on:
 
 ### No facts, no progress
 
-Subjective optimism does not move a deal forward. Progress must come from evidence, action, organizational change, commitment, delivery, or financial reality.
+This is both a sales rule and the wider simulation philosophy. Subjective optimism does not move the world forward. Progress must come from verifiable facts: action results, organizational change, commitment, delivery, money, or other real state changes.
 
 ### Actions are not outcomes
 

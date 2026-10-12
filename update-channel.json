@@ -1,21 +1,24 @@
 {
   "channel": "alpha",
   "platform": "android",
-  "latest_tag": "v4-alpha2.1-r1",
-  "version_name": "4.0-alpha.2.1-r1",
-  "version_code": 4202,
+  "latest_tag": "v4-alpha3-dayweek-r1",
+  "version_name": "4.0-alpha.3",
+  "version_code": 4300,
   "package_id": "com.kyle.ceoterminal.v4alpha",
   "prerelease": true,
   "mandatory": false,
-  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1",
-  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk",
-  "sha256": "0ecd0c68e69acee2fe8216b72df44191a49490cdce451503f5a6565208578560",
-  "notes": "Alpha 2.1 R1: refined walking, open sofa access, alley sign, improved furniture collision, floating left-half movement and larger buttons. Same verified signing certificate as Alpha 2.1 / 4201: install over it to retain local saves.",
-  "apk_size_bytes": 78729694,
+  "release_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1",
+  "apk_url": "https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk",
+  "sha256": "10982458a6920981416f8eaa220df7e79d0fb7cddb4c5e3a82eb4f55d603fd97",
+  "notes": "Alpha3 natural-day/week, cohesive CEO walk animation and RPG/Jazz BGM v2.6. Different test-signing certificate from Alpha2.1 R1: cannot be assumed to upgrade in place. Never uninstall a save-bearing copy merely to install this prerelease.",
+  "apk_size_bytes": 87181789,
   "architectures": [
     "arm64-v8a",
     "armeabi-v7a"
   ],
   "min_sdk": 24,
-  "signing_certificate_sha256": "84e111d18f33fb1a0b52a20a4ce6088660c8b04dcbc0780327e113a1e1b3d697"
+  "signing_certificate_sha256": "88aede779af3d41872dd271c280482e509a3c42b0cdf02998a991f1f30843134",
+  "in_place_upgrade_supported": false,
+  "save_migration_supported": false,
+  "install_policy": "manual_install_on_test_device_if_old_saves_must_be_preserved"
 }

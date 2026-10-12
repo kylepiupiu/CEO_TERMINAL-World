@@ -4,31 +4,24 @@
 
 CEO TERMINAL 的公开 Android 测试版统一通过本仓库的 **Releases** 发布。
 
-## 当前推荐版本
+## 当前公开试玩版本
 
-**CEO TERMINAL V4 — Alpha 2.1 R1**
+**CEO TERMINAL V4 — Alpha3 自然日与自然周 R1**
 
-Release 页面：
+Release：https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1
+APK 直链：https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk
 
-APK 直链：
-
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk
-
-当前 Android 信息：
-
-- 版本：`4.0-alpha.2.1-r1`
-- Version Code：`4202`
+- 版本：`4.0-alpha.3`，Version Code：`4300`
 - 包名：`com.kyle.ceoterminal.v4alpha`
-- 架构：arm64-v8a + armeabi-v7a（同一个 APK）
-- 最低要求：Android 7.0 / OpenGL ES 3.0
-- 横屏运行，同时支持反向横屏
-- 当前游戏内语言：中文
-- APK：`78,729,694 bytes`
-- SHA-256：`0ecd0c68e69acee2fe8216b72df44191a49490cdce451503f5a6565208578560`
+- APK：87,181,789 字节
+- SHA-256：`10982458a6920981416f8eaa220df7e79d0fb7cddb4c5e3a82eb4f55d603fd97`
+- APK 签名证书 SHA-256：`88aede779af3d41872dd271c280482e509a3c42b0cdf02998a991f1f30843134`
+- Android 离线 Alpha 试玩版，游戏内为中文，横屏运行。
 
-该版本属于 **Alpha 测试签名版本**。
+**关键兼容性提醒：**Alpha3 使用的测试签名证书与 Alpha2.1 R1 **不同**，不能视为已验证的覆盖升级版本。Android 可能拒绝覆盖安装。**如果旧版仍有需要保留的存档，不要直接卸载旧版**；卸载可能永久删除本地存档。当前尚没有经过验证的跨签名存档迁移方案。建议另用测试设备安装，或先通过可靠方式备份并验证存档。
+
+上一公开版本：[Alpha 2.1 R1](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1)（4.0-alpha.2.1-r1 / 4202）。它仅与 Alpha 2.1 / 4201 验证过覆盖兼容，**不代表 Alpha3 可以覆盖升级**。
 
 ## 安装
 
@@ -65,7 +58,7 @@ Alpha 2.1 R1 / 4202 与 Alpha 2.1 / 4201 使用相同包名和已经验证一致
 
 `84e111d18f33fb1a0b52a20a4ce6088660c8b04dcbc0780327e113a1e1b3d697`
 
-更早的测试版可能使用其他签名证书，Android 可能拒绝直接覆盖。
+Alpha3 与 Alpha2.1 R1 的签名证书不同，Android 可能拒绝覆盖安装。上述 Alpha2.1 → R1 的兼容性只对那两个旧版本有效。
 
 **卸载应用会删除本地存档。** 不要为了绕过签名冲突而随意卸载一个已经有存档的版本。目前没有跨签名迁移存档的正式方案。
 

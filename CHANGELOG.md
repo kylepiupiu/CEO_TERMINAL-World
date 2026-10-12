@@ -4,7 +4,22 @@ All notable public milestones of CEO TERMINAL are summarized here.
 
 This changelog intentionally describes player-facing changes only. Internal simulation rules, balancing data, tests, source code, and hidden mechanics remain private.
 
-## V4 Alpha 2.1 R1 — Current Public Milestone
+## V4 Alpha 3 — Day & Week R1 (Current Public Milestone)
+
+Released on 2026-10-12 as a publicly downloadable Android Alpha prerelease.
+
+- Completed playable natural-day and natural-week loops with time, meals, commitments, appointments and follow-up.
+- Improved visitor registration and access, client's office/floor routing and phone/client workbench navigation.
+- Refined project delegation through colleague conversations; clearer daily task recording and finance transaction drilldowns.
+- Rebuilt coherent four-direction CEO walk with approved face, suit, arms and alternating footfall.
+- Introduced revised RPG/Jazz BGM v2.6.
+- Preserved fact-based sales mechanics, existing environments and local-save format.
+
+Version 4.0-alpha.3 / code 4300. Signed with a test certificate **different from Alpha 2.1 R1**; in-place installation and save migration are not assured. Back up saves and do not uninstall old builds casually.
+
+[Download and release notes](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1)
+
+## V4 Alpha 2.1 R1 — Previous Public Milestone
 
 Released on 2026-10-07 in response to playtest feedback.
 

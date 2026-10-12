@@ -32,7 +32,21 @@ CEO TERMINAL 不是 CRM，也不是“点按钮刷进度”的销售小游戏。
 
 ## 当前 Android 试玩版
 
-### V4 — Alpha 2.1 R1
+### V4 — Alpha3 自然日与自然周 R1（最新）
+
+**[下载 CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk)** · [版本说明与 SHA-256 校验](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1)
+
+- 版本：`4.0-alpha.3`，Version Code `4300`
+- 包名：`com.kyle.ceoterminal.v4alpha`
+- APK 大小：87,181,789 字节；SHA-256：`10982458a6920981416f8eaa220df7e79d0fb7cddb4c5e3a82eb4f55d603fd97`
+- 完成自然日、自然周基本玩法，包含拜访、邀约、工作手帐、待办与财务流水等
+- 更新 CEO 四方向自然行走动画，采用 RPG / Jazz BGM v2.6
+- 已通过 Godot 场景及自然日 125 项、自然周 112 项、存档完整性 72 项自动化测试
+- Android 离线 Alpha 试玩版；当前游戏文字为中文
+
+**重要存档提醒：**Alpha3 和 Alpha2.1 R1 的测试签名证书不同，无法保证直接覆盖安装。若手机里已有重要存档，**不要为安装新版直接卸载旧版**，卸载可能导致本地存档永久丢失。旧版存档迁移尚未验证。参见 [安装与更新说明](./INSTALL_AND_UPDATE.zh-CN.md)。
+
+### 历史版本：V4 — Alpha 2.1 R1
 
 **[下载 CEO_TERMINAL_V4-Alpha2.1-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk)** · [版本说明与校验信息](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1)
 
@@ -154,7 +168,7 @@ Alpha Core 之后的公开方向包括：
 
 机器可读的更新信息位于 **[update-channel.json](./update-channel.json)**。
 
-当前仍属于 Alpha 测试签名阶段。Alpha 2.1 / 4201 → R1 / 4202 已验证可直接覆盖更新，但与更早历史版本的签名兼容性并不保证。
+当前仍处于 Alpha 测试签名阶段。新发布的 Alpha3 / 4300 与 Alpha2.1 R1 / 4202 签名不同，不能保证覆盖更新；不要为安装新版本卸载尚需保留存档的旧版本。
 
 ---
 
@@ -209,7 +223,7 @@ Alpha Core 之后的公开方向包括：
 
 ## 当前状态
 
-**当前公开版本：** V4 Alpha 2.1 R1  
+**当前公开版本：** V4 Alpha3 自然日与自然周 R1  
 **开发状态：** 持续开发 / External Alpha 测试  
 **主要平台：** Android  
 **公开文档：** English / 简体中文  

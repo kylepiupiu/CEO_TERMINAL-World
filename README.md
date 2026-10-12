@@ -28,7 +28,21 @@ A good decision can fail in the short term. A bad decision can occasionally appe
 
 ## Play the Current Android Build
 
-### V4 — Alpha 2.1 R1
+### V4 — Alpha 3: Day & Week R1 (Latest)
+
+**[Download CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk)** · [Release notes and SHA-256](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1)
+
+- Version: `4.0-alpha.3`, version code `4300`
+- Android package: `com.kyle.ceoterminal.v4alpha`
+- APK size: 87,181,789 bytes; SHA-256: `10982458a6920981416f8eaa220df7e79d0fb7cddb4c5e3a82eb4f55d603fd97`
+- Natural day and week gameplay, conversations, visits, appointments, daily planning and finance details
+- Revised four-direction CEO walk animation and RPG/Jazz BGM v2.6
+- Godot validated: 17 scenes, 125 natural-day, 112 natural-week, 72 save-integrity checks
+- Offline Android Alpha; current game language: Chinese
+
+**Important save warning:** Alpha 3 uses a different test-signing certificate from Alpha 2.1 R1. Android may refuse an in-place upgrade. Do not uninstall an older save-bearing installation unless you understand its local save data may be permanently lost. Save migration is not verified. See [INSTALL_AND_UPDATE.md](./INSTALL_AND_UPDATE.md).
+
+### Previous: V4 — Alpha 2.1 R1
 
 **[Download CEO_TERMINAL_V4-Alpha2.1-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk)** · [Release notes and checksums](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1)
 
@@ -195,7 +209,7 @@ At this stage, the project is not accepting unsolicited source-code contribution
 
 ## Project Status
 
-**Current public milestone:** V4 Alpha 2.1 R1  
+**Current public milestone:** V4 Alpha 3 Day & Week R1  
 **Development status:** Active / External Alpha testing  
 **Primary platform:** Android  
 **Public documentation:** English  

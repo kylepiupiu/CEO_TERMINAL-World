@@ -2,31 +2,24 @@
 
 CEO TERMINAL public Android test builds are distributed through this repository's **Releases** section.
 
-## Current recommended build
+## Current public build
 
-**CEO TERMINAL V4 — Alpha 2.1 R1**
+**CEO TERMINAL V4 — Alpha 3 Day & Week R1**
 
-Release page:
+Release: https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1
+APK: https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk
 
-Direct APK:
+- Version: `4.0-alpha.3`, code `4300`
+- Package: `com.kyle.ceoterminal.v4alpha`
+- Size: 87,181,789 bytes
+- SHA-256: `10982458a6920981416f8eaa220df7e79d0fb7cddb4c5e3a82eb4f55d603fd97`
+- APK signing certificate SHA-256: `88aede779af3d41872dd271c280482e509a3c42b0cdf02998a991f1f30843134`
+- Offline Chinese-language Android Alpha prerelease; landscape mode.
 
-https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha2.1-r1/CEO_TERMINAL_V4-Alpha2.1-r1.apk
+**Critical compatibility warning:** This Alpha 3 APK has a **different** debug signing certificate from Alpha 2.1 R1 and other older builds. It is not a verified over-the-top update; Android may reject installation over the installed version. **Do not uninstall an older game with saves you want to keep.** Uninstalling may permanently erase local saves. There is no tested cross-certificate save migration process. Test on another device or confirm an independently verified save backup before changing versions.
 
-Current Android identity:
-
-- Version name: `4.0-alpha.2.1-r1`
-- Version code: `4202`
-- Package ID: `com.kyle.ceoterminal.v4alpha`
-- Architecture: arm64-v8a and armeabi-v7a (one APK)
-- Minimum: Android 7.0 / OpenGL ES 3.0
-- Orientation: landscape, including reverse landscape
-- In-game language: Chinese
-- APK size: `78,729,694 bytes`
-- SHA-256: `0ecd0c68e69acee2fe8216b72df44191a49490cdce451503f5a6565208578560`
-
-The Alpha 2.1 R1 build is a **test-signed prerelease**.
+Previous release: [Alpha 2.1 R1](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha2.1-r1) (4.0-alpha.2.1-r1 / 4202). That build was verified as an in-place upgrade specifically from Alpha 2.1 / 4201; **that result does not apply to Alpha 3**.
 
 ## Installation
 
@@ -57,13 +50,13 @@ Android can install a new APK over an existing installation only when:
 - both APKs use the same signing key;
 - the new APK has a higher version code.
 
-The current Alpha channel is still test-signed. A permanent in-place update channel is **not yet guaranteed**.
+The current Alpha 3 build is test-signed with a **different key from Alpha 2.1 R1**. An in-place update cannot be assumed, and a permanent in-place update channel is **not yet guaranteed**.
 
 Alpha 2.1 R1 / 4202 has the same package and verified signing certificate as Alpha 2.1 / 4201, with a higher version code. Install it over 4201 to preserve local saves; do not uninstall first. The save format and business data are unchanged.
 
 Signing certificate SHA-256: `84e111d18f33fb1a0b52a20a4ce6088660c8b04dcbc0780327e113a1e1b3d697`.
 
-Older test builds may have a different certificate, so Android may reject those in-place upgrades. Uninstalling deletes local saves. Do not remove a save-bearing installation to bypass a signing conflict. There is no supported cross-signature save migration.
+Alpha 3 has a different certificate, so Android may reject installing it over Alpha 2.1 R1 and other older test builds. Uninstalling deletes local saves. Do not remove a save-bearing installation to bypass a signing conflict. There is no supported cross-signature save migration.
 
 ## Planned permanent update channel
 

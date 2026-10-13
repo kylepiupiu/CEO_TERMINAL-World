@@ -30,6 +30,11 @@ A good decision can fail in the short term. A bad decision can occasionally appe
 
 ### V4 — Alpha 3: Day & Week R1 (Latest)
 
+**[Play instantly in your browser](https://kylepiupiu.github.io/CEO_TERMINAL-World/)** · [Download standalone Web export (ZIP)](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-R1_Web.zip)
+
+The browser build is exported from the same Godot Alpha3 R1 game source as the Android APK, not a separate rewrite. Best tried first with current desktop Chrome/Edge. WebGL 2.0 is required; Firefox, mobile browsers and Safari need real-device feedback. Saves are browser-local and do not automatically synchronize with Android saves. **Do not enter confidential company or real customer data into this public game test.**
+
+
 **[Download CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk)** · [Release notes and SHA-256](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1)
 
 - Version: `4.0-alpha.3`, version code `4300`

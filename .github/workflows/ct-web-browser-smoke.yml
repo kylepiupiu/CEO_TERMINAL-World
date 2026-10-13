@@ -67,6 +67,15 @@ jobs:
           })().catch(e=>{console.error(e);process.exit(1)})
           NODE
           node /tmp/ct-browser-smoke/smoke.js
+          python3 -m pip install --user Pillow
+          python3 - <<'PY'
+          from PIL import Image, ImageStat
+          img=Image.open('/tmp/ct-browser-smoke/screenshot.png').convert('RGB')
+          deviations=ImageStat.Stat(img).stddev
+          print('SCREENSHOT', img.size, 'channel_stddev', [round(v,2) for v in deviations])
+          assert max(deviations) > 9, 'Blank/static-color game screenshot'
+          print('PASS: Godot canvas has non-blank visual content')
+          PY
       - name: Cleanup
         if: always()
         run: kill "$(cat /tmp/ct-http.pid)" 2>/dev/null || true

@@ -1,0 +1,72 @@
+name: CT Web Preview Browser Smoke
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ct-web-browser-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chrome-webgl-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Checkout published Godot HTML files
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - name: Verify browser resources on static file server
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          test -s index.js
+          test -s index.wasm
+          test -s index.pck
+          python3 -m http.server 8123 --bind 127.0.0.1 >/tmp/ct-http.log 2>&1 &
+          echo $! > /tmp/ct-http.pid
+          sleep 2
+          for path in index.html index.js index.wasm index.pck; do curl --fail -sS -o /dev/null "http://127.0.0.1:8123/$path"; done
+      - name: Run Chromium WebGL2 startup and frame smoke
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ct-browser-smoke
+          npm install --prefix /tmp/ct-browser-smoke --no-audit --no-fund playwright@1.57.0
+          cat >/tmp/ct-browser-smoke/smoke.js <<'NODE'
+          const {chromium}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({
+              headless:true,
+              channel:'chrome',
+              args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']
+            });
+            const page=await browser.newPage({viewport:{width:1280,height:720},deviceScaleFactor:1});
+            const errors=[];
+            page.on('pageerror',e=>errors.push('pageerror: '+e.message));
+            page.on('console',msg=>{if(msg.type()==='error') errors.push('console: '+msg.text())});
+            page.on('requestfailed',req=>errors.push('fetch '+req.url()+': '+req.failure()?.errorText));
+            await page.goto('http://127.0.0.1:8123/index.html',{waitUntil:'domcontentloaded',timeout:60000});
+            await page.waitForTimeout(18000);
+            const state=await page.evaluate(()=>{
+              const canvas=document.querySelector('canvas');
+              const gl2=document.createElement('canvas').getContext('webgl2');
+              return {title:document.title,canvas:!!canvas,canvasWidth:canvas?.width,canvasHeight:canvas?.height,webgl2:!!gl2,bodyLength:document.body?.innerText?.length||0};
+            });
+            await page.screenshot({path:'/tmp/ct-browser-smoke/screenshot.png',fullPage:true});
+            console.log('WEB STATE',JSON.stringify(state));
+            console.log('BROWSER ERRORS',JSON.stringify(errors.slice(0,35)));
+            if(!state.webgl2||!state.canvas||state.canvasWidth<=0||state.canvasHeight<=0)throw new Error('WebGL2 or game canvas missing');
+            if(errors.some(x=>/RuntimeError|Aborted|Failed to fetch|404|Uncaught|failed to load|Godot Engine initialization failed/i.test(x)))throw new Error('Critical engine/browser error');
+            console.log('PASS: Headless Chrome loads Godot game with WebGL2 canvas and no critical JS/HTTP errors');
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)})
+          NODE
+          node /tmp/ct-browser-smoke/smoke.js
+      - name: Cleanup
+        if: always()
+        run: kill "$(cat /tmp/ct-http.pid)" 2>/dev/null || true

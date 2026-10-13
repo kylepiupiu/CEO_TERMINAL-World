@@ -34,6 +34,11 @@ CEO TERMINAL 不是 CRM，也不是“点按钮刷进度”的销售小游戏。
 
 ### V4 — Alpha3 自然日与自然周 R1（最新）
 
+**[点击进入 HTML 网页试玩版](https://kylepiupiu.github.io/CEO_TERMINAL-World/)** · [下载 Web 离线部署包（ZIP）](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-R1_Web.zip)
+
+Web 版与 Android 版来自同一个 Godot Alpha3 R1 游戏代码，不是另一套简化游戏。建议先用新版 Chrome / Edge 电脑版体验；Safari、安卓浏览器、触屏和存档持久性还需要玩家验证。网页存档保存在浏览器本地，不自动与 APK 同步。**这是公开测试游戏，不要在其中填写公司的真实客户信息、合同或涉密资料。**
+
+
 **[下载 CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-DayWeek-r1.apk)** · [版本说明与 SHA-256 校验](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-alpha3-dayweek-r1)
 
 - 版本：`4.0-alpha.3`，Version Code `4300`

@@ -1,0 +1,26 @@
+name: V4 public street preview browser QA (NO APK)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "previews/v4-commercial-lane-polish-r2/**"
+      - ".github/workflows/v4-public-preview-r2-ci.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test_original_ceo_motion:
+    name: Chromium first-impression, movement, asset and glass checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated headless browser test runtime
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Run all desktop, mobile landscape and tablet tests
+        run: node previews/v4-commercial-lane-polish-r2/test_preview.cjs

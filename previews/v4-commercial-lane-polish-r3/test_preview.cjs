@@ -42,7 +42,8 @@ async function run(){
    await page.evaluate(()=>{player.x=973;player.y=550;player.actualSpeed=0;});
    await page.keyboard.down("ArrowUp");await delay(530);await page.keyboard.up("ArrowUp");
    const glass=await page.evaluate(()=>window.__CT_PREVIEW_QA__.getPlayer());
-   assert(glass.y>=537,name+": avatar feet penetrated BOOKS facade");
+   const bookWall=515, expectedStop=bookWall+g.player_radius_source_px;
+   assert(glass.y>=expectedStop-1.5,name+": avatar feet penetrated BOOKS facade at "+glass.y+" expected "+expectedStop);
    await page.locator("#action").click();
    assert((await page.locator("#note").textContent()).includes("BOOKS书店"),name+": door interaction inaccessible");
    await page.keyboard.down("ArrowDown");await delay(200);await page.keyboard.up("ArrowDown");

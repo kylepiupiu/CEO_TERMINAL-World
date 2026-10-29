@@ -1,0 +1,26 @@
+name: 'CT V4 R3 Online Occlusion and Real Touch Browser QA'
+on:
+  push:
+    branches:
+      - preview/v4-occlusion-r3-20261029
+    paths:
+      - '.github/workflows/v4-public-preview-r3-ci.yml'
+      - 'previews/v4-commercial-lane-polish-r3/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r3-real-chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated Chromium testing
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Three screen and source-exact foreground tests
+        run: node previews/v4-commercial-lane-polish-r3/test_preview.cjs

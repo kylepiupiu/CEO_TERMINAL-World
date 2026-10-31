@@ -30,9 +30,19 @@ CEO TERMINAL 不是 CRM，也不是“点按钮刷进度”的销售小游戏。
 
 ---
 
+## 最新 V4 跨平台试玩版（QA 预览，非正式发行）
+
+**[直接打开 V4 HTML5 网页试玩：iPhone / iPad / Mac / Windows](https://kylepiupiu.github.io/CEO_TERMINAL-World/v4-qa/)** · **[下载 V4 QA 安卓 APK](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-qa-preview-20261031)**
+
+这是真正从 **21 场景 V4 Godot 源码**导出的网页游戏和安卓安装包，不是重新做的一套简化 HTML。网页版采用单线程 WebAssembly / WebGL2，桌面 Chromium 及模拟 iPhone、iPad 横屏尺寸的 WebKit 自动测试通过；但**尚未完成真实 iPhone/iPad 上的触控、性能和本地存档验收**。手机请横屏打开，建议使用新版 Safari；网页存档仅在当前浏览器本地，不会同步到安卓。
+
+**安卓存档安全：**本次 QA APK 的包名为 `com.kyle.ceoterminal.alpha4qa`，可与已安装的 Alpha3 并存，**不要卸载原版 Alpha3**，也不要假设不同 QA 包都能覆盖升级。本版尚未通过正式美术及真机总验收，属于公开预览而非 V4 正式版。请勿输入真实客户、合同或涉密数据。
+
+---
+
 ## 当前 Android 试玩版
 
-### V4 — Alpha3 自然日与自然周 R1（最新）
+### V4 — Alpha3 自然日与自然周 R1（稳定版）
 
 **[点击进入 HTML 网页试玩版](https://kylepiupiu.github.io/CEO_TERMINAL-World/)** · [下载 Web 离线部署包（ZIP）](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-R1_Web.zip)
 

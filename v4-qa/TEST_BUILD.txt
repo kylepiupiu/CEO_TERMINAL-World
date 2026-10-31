@@ -1,0 +1,5 @@
+CEO TERMINAL V4 QA browser preview, not final released V4.
+Same Godot V4 GDScript/world implementation; does not synchronize local saves with Android.
+Touch requires landscape orientation and WebGL2-capable mobile Safari.
+Private game code is exported as executable WebAssembly/PCK, not a public Git repository.
+This branch still contains unapproved bookstore/art and has not passed real iPhone/iPad device signoff.

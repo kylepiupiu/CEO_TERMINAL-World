@@ -26,9 +26,19 @@ A good decision can fail in the short term. A bad decision can occasionally appe
 
 ---
 
+## V4 — Latest Cross-Platform QA Preview (not final release)
+
+**[Play V4 QA now in your browser — iPhone / iPad / Mac / Windows](https://kylepiupiu.github.io/CEO_TERMINAL-World/v4-qa/)** · **[Download V4 QA Android APK](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/tag/v4-qa-preview-20261031)**
+
+This is the actual 21-scene Godot V4 build, exported from one game source into HTML5 WebAssembly and Android APK — not a separate HTML remake. The Web build uses a single thread and WebGL2; automated Chromium and Linux WebKit tests passed at iPhone/iPad landscape viewport sizes, but physical iPhone/iPad behavior, touch feel, performance and save persistence still require user testing. Rotate your phone to landscape. Saves are browser-local and do not sync with Android.
+
+**Android safety:** The QA APK has a separate identity (`com.kyle.ceoterminal.alpha4qa`) and installs alongside the previously published Alpha3. Do not uninstall Alpha3 or assume QA builds can update each other: the QA test key is not the historical production signer. **V4 artwork and real-device signoff are not complete; this is a preview, not a final V4 release.** Never enter real customer or confidential company information into the public test.
+
+---
+
 ## Play the Current Android Build
 
-### V4 — Alpha 3: Day & Week R1 (Latest)
+### V4 — Alpha 3: Day & Week R1 (Stable)
 
 **[Play instantly in your browser](https://kylepiupiu.github.io/CEO_TERMINAL-World/)** · [Download standalone Web export (ZIP)](https://github.com/kylepiupiu/CEO_TERMINAL-World/releases/download/v4-alpha3-dayweek-r1/CEO_TERMINAL_V4-Alpha3-R1_Web.zip)
 

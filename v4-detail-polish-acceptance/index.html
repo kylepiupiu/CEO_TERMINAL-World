@@ -18,6 +18,11 @@ const QA_GEO={"street":{"bounds":[50,310,1570,555],"solids":[[42,0,498,307],[554
 const QA_POINTS={"street":[[100,560,"west","返回原主城区",125],[334,337,"soho","CEO SOHO",128],[830,334,"tech","科技大厦",120],[1374,334,"gov","政务服务大楼",120],[474,807,"bookshop","忒修斯书店",105],[1272,807,"bistro","小满食堂",105],[1541,561,"east","东侧道路",110]],"bookshop":[[835,885,"street","离开书店",112],[727,472,"shelf","城市观察书架",115],[1260,581,"reading","阅读角",120],[865,652,"newBooks","新书桌",112]]};
 const QA_SX=W/1672, QA_SY=H/941;
 const qaPoint=(x,y)=>({x:x*QA_SX,y:y*QA_SY});
+function qaNotice(text,duration=1300){
+  state.noticeText=text;
+  state.noticeUntil=performance.now()+duration;
+  document.getElementById('tip').textContent=text;
+}
 function qaCanStand(x,y,scene=state.scene){
   const g=QA_GEO[scene],r=g.radius;
   const [bx,by,bw,bh]=g.bounds;
@@ -51,14 +56,15 @@ function qaUpdateHint(){
   const action=document.getElementById('interact');
   action.disabled=!near;
   action.textContent=near?'交互 · '+near.label:'靠近入口交互';
-  const hint=near?('空格 / 交互 · '+near.label):(state.scene==='street'?'方向键 / WASD 移动 · 走近门口或路牌交互':'方向键 / WASD 移动 · 靠近书架、阅读角或出口');
+  const base=near?('空格 / 交互 · '+near.label):(state.scene==='street'?'方向键 / WASD 移动 · 走近门口或路牌交互':'方向键 / WASD 移动 · 靠近书架、阅读角或出口');
+  const hint=state.noticeUntil>performance.now()?state.noticeText:base;
   if(hint!==qaTipCache){qaTipCache=hint;document.getElementById('tip').textContent=hint;}
 }
 document.getElementById('interact').onclick=qaInteract;
 window.addEventListener('blur',()=>{state.hold.clear();state.joy={x:0,y:0};stick.style.transform='';});
 const img={},state={scene:'street',actor:{x:830,y:542,dir:'down',t:0},marker:false,hold:new Set(),joy:{x:0,y:0},last:performance.now(),dialog:false};
 for(const [name,uri] of Object.entries(IMAGES)){img[name]=new Image();img[name].src=uri;}
-function init(place){state.scene=place;const sc=worlds[place];state.actor={x:sc.x,y:sc.y,dir:'down',t:0};state.walking=false;state.dialog=false;state.joy={x:0,y:0};state.hold.clear();document.getElementById('dialog').style.display='none';document.getElementById('place').textContent=sc.title;document.querySelectorAll('[data-scene]').forEach(b=>b.classList.toggle('on',b.dataset.scene===place));document.getElementById('return').style.display=place==='street'?'none':'';document.getElementById('tip').textContent=place==='street'?'WASD / 方向键移动 · 点击建筑入口查看':'从书店门口走进 · 点击书架、阅读角和出口';}
+function init(place){state.scene=place;const sc=worlds[place];state.actor={x:sc.x,y:sc.y,dir:'down',t:0};state.walking=false;state.noticeUntil=0;state.noticeText='';state.dialog=false;state.joy={x:0,y:0};state.hold.clear();document.getElementById('dialog').style.display='none';document.getElementById('place').textContent=sc.title;document.querySelectorAll('[data-scene]').forEach(b=>b.classList.toggle('on',b.dataset.scene===place));document.getElementById('return').style.display=place==='street'?'none':'';document.getElementById('tip').textContent=place==='street'?'WASD / 方向键移动 · 点击建筑入口查看':'从书店门口走进 · 点击书架、阅读角和出口';}
 function say(title,message){state.dialog=true;document.getElementById('speaker').textContent=title;document.getElementById('message').textContent=message;document.getElementById('dialog').style.display='block';}
 function visit(key){if(key==='bookshop'||key==='street'){init(key);return;}const messages={soho:['CEO SOHO','已标明高层共享办公建筑及入口。这里仍使用既有公共大厅规则；本验收文件只检查街区视觉与建筑位置。'],west:['返回原主城区','向西步行可返回原主城区。这里是独立细节验收页，正式双向场景切换已在 Godot V4 工程中实现。'],east:['东侧道路','东侧后续拓展区域暂未开放，V4 不增加新场景。'],newBooks:['新书桌','从不同角度审视商业问题。书店阅读不会自动产生客户项目进度。'],tech:['科技大厦','这栋大楼为未来其他公司入驻预留空间。现阶段仅可查看大楼外观和公共导览，不开放未入驻的公司，也不改变 V4 已冻结的访问规则。'],gov:['政务服务大楼','政务服务大楼位于街道北侧，目前仅提供建筑外观与公共导览，不在 V4 新增行政审批玩法。'],bistro:['小满食堂','小餐厅位于街道南侧。其付款、时间推进和对话仍以既有 Godot V4 的冻结规则为准。'],shelf:['城市观察书架','公开行业观点可以启发判断，但不代表客户内部事实。'],reading:['书店阅读角','这个位置用于体验书店内部的空间布局、角色移动和家具遮挡。']};const m=messages[key];if(m)say(...m);}
 function keys(e,isDown){if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' '].includes(e.key)||['w','a','s','d','W','A','S','D'].includes(e.key))e.preventDefault();if(isDown)state.hold.add(e.key.toLowerCase());else state.hold.delete(e.key.toLowerCase());if(isDown && (e.key==='Escape'||e.key==='Enter'))close();if(isDown && (e.code==='Space'||e.key==='e'||e.key==='E')){if(qaInteract())e.preventDefault();}}
@@ -72,7 +78,7 @@ canvas.addEventListener('pointerdown',e=>{
  const nearest=QA_POINTS[state.scene].map(p=>{const c=qaPoint(p[0],p[1]);return {key:p[2],label:p[3],distance:Math.hypot(x-c.x,y-c.y)}}).sort((a,b)=>a.distance-b.distance)[0];
  if(nearest && nearest.distance<70){
    if(qaNearby()?.key===nearest.key)visit(nearest.key);
-   else {document.getElementById('tip').textContent='请走近 '+nearest.label+' 再交互';qaTipCache='';}
+   else qaNotice('请走近 '+nearest.label+' 再交互');
  }
 });
 function drawActor(x,y,dir,t,s,moving){

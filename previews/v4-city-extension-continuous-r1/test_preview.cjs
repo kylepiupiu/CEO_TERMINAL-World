@@ -72,6 +72,12 @@ async function run(){
    const after=await page.evaluate(()=>window.__CT_V4_CITY_QA__.state.x);
    await page.keyboard.up('ArrowRight');
    assert(after>before+30,name+': keyboard not moving');
+   if(touch){
+    const t0=await page.evaluate(()=>window.__CT_V4_CITY_QA__.state.x);
+    await page.locator('#right').tap(); await sleep(60);
+    const t1=await page.evaluate(()=>window.__CT_V4_CITY_QA__.state.x);
+    assert(t1>t0+8,name+': short touch tap did not move the avatar');
+   }
    const bounds=await page.evaluate(()=>({
     dpad:document.getElementById('dpad').getBoundingClientRect().toJSON(),
     actions:document.getElementById('actions').getBoundingClientRect().toJSON(),

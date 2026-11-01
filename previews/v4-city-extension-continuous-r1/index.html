@@ -75,8 +75,8 @@ function buildingTop(){
  // Technology tower: existing light stone + blue-grey office fenestration.
  imagePart(990,0,465,317,2235,0,475,317,'saturate(.87)');
  // Neutral original-color masonry covers the copied customer-office plaque.
- bg.fillStyle='#b9b4b0';bg.fillRect(2420,85,285,88);
- bg.strokeStyle='#989a9a';bg.lineWidth=1;for(let z=2426;z<2700;z+=62){bg.beginPath();bg.moveTo(z,85);bg.lineTo(z,132);bg.stroke();}
+ // Restore windows from the same old office facade; omit its inherited plaque.
+ imagePart(1495,61,163,108,2420,85,285,88,'saturate(.86)');
  bg.fillStyle='#d5c7b8';bg.fillRect(2313,138,316,59);sign(2326,141,289,'科技大厦');
  // Public service: match the old customer office rather than a glass commercial tower.
  imagePart(1050,0,620,317,2724,0,620,317,'saturate(.5) brightness(.94)');

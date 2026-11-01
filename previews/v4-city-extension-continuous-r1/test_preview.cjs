@@ -25,7 +25,8 @@ async function run(){
      if(Array.from(x1).join(',')!==Array.from(x2).join(','))mismatch++;
     }
     const stage=STAGE.getContext('2d');
-    const road=stage.getImageData(1685,445,1,1).data,origin=context.getImageData(1023,445,1,1).data;
+    const sourceCrop=document.createElement('canvas');sourceCrop.width=616;sourceCrop.height=248;sourceCrop.getContext('2d').drawImage(CITY,1010,316,616,248,0,0,616,248);
+    const road=stage.getImageData(1685,445,1,1).data,origin=sourceCrop.getContext('2d').getImageData(13,129,1,1).data;
     return {
      citySize:[CITY.naturalWidth,CITY.naturalHeight],imageIdentical:mismatch===0,
      roadMatchesSource:Array.from(road).join(',')===Array.from(origin).join(','),
@@ -78,6 +79,13 @@ async function run(){
    }));
    assert(bounds.dpad.left>=0&&bounds.dpad.bottom<=height+3&&bounds.actions.right<=width+3,name+': clipped touch controls');
    assert.deepEqual(errors,[],name+': runtime network or script errors');
+   if(name==='desktop'){
+    await page.evaluate(()=>window.__CT_V4_CITY_QA__.setPosition(2520,515));
+    await sleep(140);
+    const jpeg=(await page.screenshot({type:'jpeg',quality:55})).toString('base64');
+    for(let n=0;n<Math.ceil(jpeg.length/4000);n++)console.log('CT_SCREENSHOT_JPEG_PART_'+n+'='+jpeg.slice(n*4000,(n+1)*4000));
+    console.log('CT_SCREENSHOT_JPEG_COUNT='+Math.ceil(jpeg.length/4000));
+   }
    console.log('PASS '+name,JSON.stringify({qa,seam,alley,keyboardDx:Math.round(after-before)}));
    await context.close();
   }

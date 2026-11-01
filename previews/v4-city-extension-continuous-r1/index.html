@@ -65,6 +65,8 @@ function horizontalRoad(){
  x=1672;while(x<WORLD.width){const size=Math.min(580,WORLD.width-x);imagePart(1088,808,size,133,x,808,size,133);x+=size;}
 }
 function buildingTop(){
+ // Underlay from original masonry prevents black seams between separate facades.
+ imagePart(1040,0,630,317,1672,0,1672,317,'saturate(.77)');
  // CEO SOHO: red brick and warm masonry directly from the existing company office.
  imagePart(300,0,428,317,1693,0,523,317);
  // Extra close-spaced upper-floor windows express a taller office, without changing projection.
@@ -85,6 +87,8 @@ function buildingTop(){
  bg.fillStyle='#a5a49d66';bg.fillRect(2852,287,366,12);
 }
 function buildingBottom(){
+ // Continuous original storefront masonry as a base behind the public alley.
+ for(let x=1672;x<3344;x+=580){let w=Math.min(580,3344-x);imagePart(1088,565,w,243,x,565,w,243);}
  // Same original V4 shopfront masonry, signs and dusk lighting; only shop identity changes.
  imagePart(1088,565,581,252,1710,565,722,252);
  imagePart(617,565,387,252,2585,565,758,252);

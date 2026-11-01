@@ -178,10 +178,15 @@ document.getElementById('hitbox').onclick=()=>{state.debug=!state.debug;debugEl.
 document.getElementById('reset').onclick=()=>{state.x=840;state.y=505;state.speed=0;state.walk=0;};
 function releaseAll(){held.clear();dragId=null;dragVector={x:0,y:0};touch.style.display='none';document.querySelectorAll('[data-key]').forEach(b=>b.classList.remove('pressing'));}
 for(const b of document.querySelectorAll('[data-key]')){
- let id=null;const key=b.dataset.key;
- b.addEventListener('pointerdown',e=>{id=e.pointerId;held.add(key);b.classList.add('pressing');b.setPointerCapture(id);e.preventDefault();e.stopPropagation();});
- const end=e=>{if(e.pointerId!==id)return;id=null;held.delete(key);b.classList.remove('pressing');e.stopPropagation();e.preventDefault();};
- b.addEventListener('pointerup',end);b.addEventListener('pointercancel',end);b.addEventListener('lostpointercapture',end);
+ let id=null,startAt=0,startPos=null;const key=b.dataset.key;
+ b.addEventListener('pointerdown',e=>{id=e.pointerId;startAt=performance.now();startPos={x:state.x,y:state.y};held.add(key);b.classList.add('pressing');try{b.setPointerCapture(id);}catch(_err){}e.preventDefault();e.stopPropagation();});
+ const end=(e,cancel=false)=>{
+  if(e.pointerId!==id)return;id=null;held.delete(key);b.classList.remove('pressing');
+  const shortTap=!cancel&&performance.now()-startAt<175&&startPos&&Math.hypot(state.x-startPos.x,state.y-startPos.y)<15;
+  if(shortTap){const d={up:[0,-1],down:[0,1],left:[-1,0],right:[1,0]}[key];for(let i=0;i<7;i++)move(d[0]*4,d[1]*4);state.dir=key;}
+  e.stopPropagation();e.preventDefault();
+ };
+ b.addEventListener('pointerup',e=>end(e));b.addEventListener('pointercancel',e=>end(e,true));b.addEventListener('lostpointercapture',e=>end(e,true));
 }
 const keyboard={arrowleft:'left',arrowright:'right',arrowup:'up',arrowdown:'down',a:'left',d:'right',w:'up',s:'down'};
 window.addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(keyboard[k]){held.add(keyboard[k]);e.preventDefault();}if(!e.repeat&&(k==='e'||k===' ')){interact();e.preventDefault();}});

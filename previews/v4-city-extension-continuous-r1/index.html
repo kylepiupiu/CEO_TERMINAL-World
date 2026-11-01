@@ -74,10 +74,17 @@ function buildingTop(){
  bg.fillStyle='#504039b0';bg.fillRect(1797,139,325,55);sign(1824,142,271,'CEO SOHO');
  // Technology tower: existing light stone + blue-grey office fenestration.
  imagePart(990,0,465,317,2235,0,475,317,'saturate(.87)');
+ // Neutral original-color masonry covers the copied customer-office plaque.
+ bg.fillStyle='#b9b4b0';bg.fillRect(2420,85,285,88);
+ bg.strokeStyle='#989a9a';bg.lineWidth=1;for(let z=2426;z<2700;z+=62){bg.beginPath();bg.moveTo(z,85);bg.lineTo(z,132);bg.stroke();}
  bg.fillStyle='#d5c7b8';bg.fillRect(2313,138,316,59);sign(2326,141,289,'科技大厦');
  // Public service: match the old customer office rather than a glass commercial tower.
  imagePart(1050,0,620,317,2724,0,620,317,'saturate(.5) brightness(.94)');
  bg.fillStyle='#82868a33';bg.fillRect(2724,0,620,316);
+ // Civic entablature: sober stonework removes inherited '客户单位' signage.
+ bg.fillStyle='#b9bab8';bg.fillRect(2855,90,314,87);
+ bg.strokeStyle='#8c9195';bg.lineWidth=1;bg.strokeRect(2855,90,314,87);
+ for(let z=2890;z<3170;z+=68){bg.beginPath();bg.moveTo(z,90);bg.lineTo(z,140);bg.stroke();}
  // Uniform restrained stone piers and symmetric entry; deliberately no retail lighting.
  bg.fillStyle='#acaaa733';
  for(let x=2770;x<=3290;x+=98)bg.fillRect(x,25,9,244);

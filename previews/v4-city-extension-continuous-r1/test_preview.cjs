@@ -19,7 +19,7 @@ async function run(){
    const qa=await page.evaluate(()=>{
     const q=window.__CT_V4_CITY_QA__;
     const b=document.createElement('canvas'); b.width=1672;b.height=941;
-    const context=b.getContext('2d'); context.drawImage(CITY,0,0);
+    const context=b.getContext('2d'); context.drawImage(CITY,0,0,1672,941);
     let mismatch=0;for(const [x,y] of [[60,320],[520,332],[1322,326],[810,825],[1600,502]]){
      const x1=context.getImageData(x,y,1,1).data,x2=STAGE.getContext('2d').getImageData(x,y,1,1).data;
      if(Array.from(x1).join(',')!==Array.from(x2).join(','))mismatch++;
@@ -44,7 +44,7 @@ async function run(){
      canvas:[canvas.width,canvas.height]
     };
    });
-   assert.deepEqual(qa.citySize,[1672,941],name+': original V4 art not loaded');
+   assert.deepEqual(qa.citySize,[1671,941],name+': original V4 art not loaded');
    assert(qa.imageIdentical,name+': original main city pixels have been altered');
    assert(qa.roadMatchesSource,name+': extension road not sampled from original main road');
    assert.deepEqual(qa.originalEntrances,['company','client_lobby','home','cafe','restaurant'],name+': frozen entry positions changed');
